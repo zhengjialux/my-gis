@@ -1,6 +1,6 @@
 # My-GIS
 地理信息系统（需联网）：
-[Google 地图](https://developers.google.com/maps/get-started?hl=zh-cn)
+[Google 地图](https://developers.google.com/maps/get-started?hl=zh-cn)(要钱)
 [mapbox](https://docs.mapbox.com/#maps)
 [百度地图](https://lbsyun.baidu.com/index.php?title=jspopularGL)
 [高德地图](https://lbs.amap.com/api/android-sdk/summary)
