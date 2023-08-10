@@ -1,1 +1,1 @@
-module.exports = require('./gis-components')
+module.exports = require('./components')

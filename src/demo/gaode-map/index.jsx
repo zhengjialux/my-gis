@@ -1,5 +1,5 @@
 import React from "react";
-import { LbsAMap } from "@/gis-components";
+import { LbsAMap } from "@/components";
 
 export default class LbsAMapDemo extends React.Component {
   render() {
