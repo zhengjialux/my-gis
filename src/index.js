@@ -10,6 +10,8 @@ import ErrorPage from "./error-page";
 import GaodeMap from "./demo/gaode-map";
 import QQMap from "./demo/qq-map";
 import BaiduMap from "./demo/baidu-map";
+import Mapbox from "./demo/mapbox";
+import GoogleMap from "./demo/google-map";
 
 const router = createHashRouter([
   {
@@ -17,6 +19,10 @@ const router = createHashRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: '/google-map',
+        element: <GoogleMap />,
+      },
       {
         path: "/gaode-map",
         element: <GaodeMap />,
@@ -28,6 +34,10 @@ const router = createHashRouter([
       {
         path: "/baidu-map",
         element: <BaiduMap />,
+      },
+      {
+        path: "/mapbox",
+        element: <Mapbox />,
       }
     ],
   },

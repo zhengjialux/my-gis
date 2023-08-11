@@ -14,6 +14,9 @@ export default function Root() {
         <nav>
           <ul>
             <li>
+              <Link to={`/google-map`}>Google 地图配置</Link>
+            </li>
+            <li>
               <Link to={`/gaode-map`}>高德地图配置</Link>
             </li>
             <li>
@@ -21,6 +24,9 @@ export default function Root() {
             </li>
             <li>
               <Link to={`/baidu-map`}>百度地图配置</Link>
+            </li>
+            <li>
+              <Link to={`/mapbox`}>Mapbox 地图配置</Link>
             </li>
           </ul>
         </nav>

@@ -1,3 +1,5 @@
 export { LbsAMap } from './lbs-amap'
 export { LbsQQMap } from './lbs-qq'
 export { LbsBaiduMap } from './lbs-baidu'
+export { Mapbox } from './mapbox'
+export { GoogleMap } from './google-map'
