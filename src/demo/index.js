@@ -16,6 +16,12 @@ export default function Root() {
             <li>
               <Link to={`/gaode-map`}>高德地图配置</Link>
             </li>
+            <li>
+              <Link to={`/qq-map`}>腾讯地图配置</Link>
+            </li>
+            <li>
+              <Link to={`/baidu-map`}>百度地图配置</Link>
+            </li>
           </ul>
         </nav>
       </div>

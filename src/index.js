@@ -8,6 +8,8 @@ import {
 import Root from './demo/index';
 import ErrorPage from "./error-page";
 import GaodeMap from "./demo/gaode-map";
+import QQMap from "./demo/qq-map";
+import BaiduMap from "./demo/baidu-map";
 
 const router = createHashRouter([
   {
@@ -19,6 +21,14 @@ const router = createHashRouter([
         path: "/gaode-map",
         element: <GaodeMap />,
       },
+      {
+        path: "/qq-map",
+        element: <QQMap />,
+      },
+      {
+        path: "/baidu-map",
+        element: <BaiduMap />,
+      }
     ],
   },
 ]);

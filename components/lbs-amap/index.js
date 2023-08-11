@@ -1,13 +1,13 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import styles from "./index.less";
+
+let a_map = null
 
 export const LbsAMap = ({
   version,
   appKey,
   appCode
 }) => {
-  let map = null;
-
   useEffect(() => {
     window._AMapSecurityConfig = {
       securityJsCode: appCode,
@@ -19,12 +19,12 @@ export const LbsAMap = ({
     document.body.appendChild(scriptElement);
 
     window.onLoad = function () {
-      map = new AMap.Map(styles.container);
+      a_map = new AMap.Map(styles.container)
     }
 
     return () => {
       // 组件销毁时清除地图实例
-      map.destroyMap();
+      a_map && a_map.destroy();
     };
   }, [])
 
