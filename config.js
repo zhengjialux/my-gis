@@ -1,4 +1,4 @@
-//! 官网注册获取个人专属 key，方便控制台监控使用状态和捕捉异常
+//! 官网注册获取个人专属 key，方便控制台监控和捕捉Bug
 
 export const _gaodeConfig = {
   appKey: '6be7d50bdef539a38d2766d2a5aa00b6',

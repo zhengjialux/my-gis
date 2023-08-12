@@ -1,3 +1,4 @@
+// 高德地图
 import { useEffect, useState } from "react"
 import styles from "./index.less";
 
@@ -6,7 +7,14 @@ let a_map = null
 export const LbsAMap = ({
   version = '2.0',
   appKey,
-  appCode
+  appCode,
+  otherOptions = {
+    viewMode: '2D',  // 默认使用 2D 模式
+    zoom: 11,  //初始化地图层级
+    center: [116.397428, 39.90923],  //初始化地图中心点
+    mapStyle: 'amap://styles/54a041f92359a6be496e336f807b2cdc',
+  },
+  layerParams = {}
 }) => {
   useEffect(() => {
     window._AMapSecurityConfig = {
@@ -19,7 +27,12 @@ export const LbsAMap = ({
     document.body.appendChild(scriptElement);
 
     window.onLoad = function () {
-      a_map = new AMap.Map(styles.container)
+      const layer = new AMap.createDefaultLayer(layerParams)
+
+      a_map = new AMap.Map(styles.container, {
+        ...otherOptions,
+        layers: [layer]
+      })
     }
 
     return () => {
