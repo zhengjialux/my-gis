@@ -5,7 +5,7 @@ let mapbox = null
 
 export const Mapbox = ({
   version = '2.9.1',
-  appKey = 'pk.eyJ1IjoiemhlbmdqaWFsdSIsImEiOiJjazltYTk3d3AwMnhiM2VvYjl4Y3JkbzJ0In0.WX4MRlKySRhnRFYHFXzoMw'
+  appKey
 }) => {
   useEffect(() => {
     createScript()
