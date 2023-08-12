@@ -4,7 +4,7 @@ import styles from "./index.less";
 let a_map = null
 
 export const LbsAMap = ({
-  version,
+  version = '2.0',
   appKey,
   appCode
 }) => {
