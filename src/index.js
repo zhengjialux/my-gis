@@ -20,10 +20,6 @@ const router = createHashRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/google-map',
-        element: <GoogleMap />,
-      },
-      {
         path: "/gaode-map",
         element: <GaodeMap />,
       },
@@ -38,7 +34,11 @@ const router = createHashRouter([
       {
         path: "/mapbox",
         element: <Mapbox />,
-      }
+      },
+      {
+        path: '/google-map',
+        element: <GoogleMap />,
+      },
     ],
   },
 ]);

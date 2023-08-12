@@ -7,3 +7,6 @@
 [腾讯地图](https://lbs.qq.com/webApi/javascriptV2/jsFaq)
 > [Google Map 收费标准](https://mapsplatform.google.com/pricing/)、
 [Mapbox 收费标准](https://www.mapbox.com/pricing/#maps)
+[百度地图提升配额](https://lbsyun.baidu.com/cashier/quota#/home)
+[高德地图提升配额](https://lbs.amap.com/upgrade#quota)
+[腾讯地图提升配额](https://lbs.qq.com/dev/console/quotaImprove)
