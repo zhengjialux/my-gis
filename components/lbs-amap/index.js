@@ -14,9 +14,11 @@ export const LbsAMap = ({
     center: [116.397428, 39.90923],  //初始化地图中心点
     mapStyle: 'amap://styles/54a041f92359a6be496e336f807b2cdc',
   },
-  layerParams = {}
+  layerParams = {},
+  traffic
 }) => {
   useEffect(() => {
+    // 初始化图层
     window._AMapSecurityConfig = {
       securityJsCode: appCode,
     }
@@ -40,6 +42,14 @@ export const LbsAMap = ({
       a_map && a_map.destroy();
     };
   }, [])
+
+  useEffect(() => {
+    // 创建实时交通路况图层
+    if (traffic) {
+      const traffic = new AMap.TileLayer.Traffic(traffic);
+      a_map.add(traffic); //通过add方法添加图层
+    }
+  }, [traffic])
 
   return <div id={styles.container}></div>
 }
