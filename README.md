@@ -1,5 +1,5 @@
 # My-GIS
-地理信息系统（需联网）：
+沉淀自己的地理信息系统（需联网，开发中）：
 [Google 地图](https://developers.google.com/maps/get-started?hl=zh-cn)(收费)、
 [mapbox](https://docs.mapbox.com/#maps)(收费)、
 [百度地图](https://lbsyun.baidu.com/index.php?title=jspopularGL)、
